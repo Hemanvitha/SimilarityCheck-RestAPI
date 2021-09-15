@@ -33,7 +33,7 @@ class Register(Resource):
         users.insert({
             "Username" : username,
             "Password" : hashed_pwd,
-            "Tokens"   : 6 #default chances given to each user for similarity check
+            "Tokens"   : 5 #default chances given to each user for similarity check
         })
 
         ret = {
